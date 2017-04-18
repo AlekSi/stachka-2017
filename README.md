@@ -1,3 +1,3 @@
 # stachka-2017
 
-Код тут скоро будет.
+Code for https://speakerdeck.com/aleksi/profilirovaniie-i-optimizatsiia-proghramm-na-go.
