@@ -5,7 +5,8 @@ all:
 	go test -v -race
 
 bench: all
-	go test -v -bench=. -count=5
+	go test -v -bench=. -count=3 -cpu 1 | tee bench.txt
+	benchstat bench.txt
 
 bench-cpu: all
 	go test -v -bench=/^Slice,20 -cpuprofile=Slice-20-cpu.pprof

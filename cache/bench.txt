@@ -1,0 +1,166 @@
+=== RUN   TestCaches
+=== RUN   TestCaches/Slice
+=== RUN   TestCaches/SortedSlice
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Slice (0.00s)
+    --- PASS: TestCaches/SortedSlice (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Slice
+=== RUN   TestCaches/SortedSlice
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Slice (0.00s)
+    --- PASS: TestCaches/SortedSlice (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Slice
+=== RUN   TestCaches/SortedSlice
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Slice (0.00s)
+    --- PASS: TestCaches/SortedSlice (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+goos: darwin
+goarch: amd64
+BenchmarkCaches/Slice,0-12         	2000000000	         0.24 ns/op
+BenchmarkCaches/Slice,0-12         	2000000000	         0.24 ns/op
+BenchmarkCaches/Slice,0-12         	2000000000	         0.24 ns/op
+BenchmarkCaches/Slice,2-12         	100000000	        14.6 ns/op
+BenchmarkCaches/Slice,2-12         	100000000	        14.6 ns/op
+BenchmarkCaches/Slice,2-12         	100000000	        14.5 ns/op
+BenchmarkCaches/Slice,4-12         	30000000	        42.3 ns/op
+BenchmarkCaches/Slice,4-12         	30000000	        42.4 ns/op
+BenchmarkCaches/Slice,4-12         	30000000	        42.4 ns/op
+BenchmarkCaches/Slice,6-12         	20000000	        84.7 ns/op
+BenchmarkCaches/Slice,6-12         	20000000	        85.2 ns/op
+BenchmarkCaches/Slice,6-12         	20000000	        84.7 ns/op
+BenchmarkCaches/Slice,8-12         	10000000	       162 ns/op
+BenchmarkCaches/Slice,8-12         	10000000	       162 ns/op
+BenchmarkCaches/Slice,8-12         	10000000	       162 ns/op
+BenchmarkCaches/Slice,10-12        	 5000000	       250 ns/op
+BenchmarkCaches/Slice,10-12        	 5000000	       252 ns/op
+BenchmarkCaches/Slice,10-12        	 5000000	       252 ns/op
+BenchmarkCaches/Slice,12-12        	 5000000	       252 ns/op
+BenchmarkCaches/Slice,12-12        	 5000000	       253 ns/op
+BenchmarkCaches/Slice,12-12        	 5000000	       253 ns/op
+BenchmarkCaches/Slice,14-12        	 5000000	       305 ns/op
+BenchmarkCaches/Slice,14-12        	 5000000	       306 ns/op
+BenchmarkCaches/Slice,14-12        	 5000000	       307 ns/op
+BenchmarkCaches/Slice,16-12        	 5000000	       376 ns/op
+BenchmarkCaches/Slice,16-12        	 5000000	       376 ns/op
+BenchmarkCaches/Slice,16-12        	 5000000	       374 ns/op
+BenchmarkCaches/Slice,18-12        	 3000000	       425 ns/op
+BenchmarkCaches/Slice,18-12        	 3000000	       425 ns/op
+BenchmarkCaches/Slice,18-12        	 3000000	       427 ns/op
+BenchmarkCaches/Slice,20-12        	 3000000	       543 ns/op
+BenchmarkCaches/Slice,20-12        	 3000000	       545 ns/op
+BenchmarkCaches/Slice,20-12        	 3000000	       542 ns/op
+BenchmarkCaches/SortedSlice,0-12   	2000000000	         0.24 ns/op
+BenchmarkCaches/SortedSlice,0-12   	2000000000	         0.24 ns/op
+BenchmarkCaches/SortedSlice,0-12   	2000000000	         0.24 ns/op
+BenchmarkCaches/SortedSlice,2-12   	50000000	        35.7 ns/op
+BenchmarkCaches/SortedSlice,2-12   	50000000	        35.5 ns/op
+BenchmarkCaches/SortedSlice,2-12   	50000000	        35.4 ns/op
+BenchmarkCaches/SortedSlice,4-12   	20000000	        84.6 ns/op
+BenchmarkCaches/SortedSlice,4-12   	20000000	        84.3 ns/op
+BenchmarkCaches/SortedSlice,4-12   	20000000	        84.2 ns/op
+BenchmarkCaches/SortedSlice,6-12   	10000000	       142 ns/op
+BenchmarkCaches/SortedSlice,6-12   	10000000	       143 ns/op
+BenchmarkCaches/SortedSlice,6-12   	10000000	       142 ns/op
+BenchmarkCaches/SortedSlice,8-12   	10000000	       203 ns/op
+BenchmarkCaches/SortedSlice,8-12   	10000000	       201 ns/op
+BenchmarkCaches/SortedSlice,8-12   	10000000	       202 ns/op
+BenchmarkCaches/SortedSlice,10-12  	 5000000	       273 ns/op
+BenchmarkCaches/SortedSlice,10-12  	 5000000	       272 ns/op
+BenchmarkCaches/SortedSlice,10-12  	 5000000	       273 ns/op
+BenchmarkCaches/SortedSlice,12-12  	 5000000	       345 ns/op
+BenchmarkCaches/SortedSlice,12-12  	 5000000	       344 ns/op
+BenchmarkCaches/SortedSlice,12-12  	 5000000	       344 ns/op
+BenchmarkCaches/SortedSlice,14-12  	 3000000	       416 ns/op
+BenchmarkCaches/SortedSlice,14-12  	 3000000	       416 ns/op
+BenchmarkCaches/SortedSlice,14-12  	 3000000	       415 ns/op
+BenchmarkCaches/SortedSlice,16-12  	 3000000	       488 ns/op
+BenchmarkCaches/SortedSlice,16-12  	 3000000	       497 ns/op
+BenchmarkCaches/SortedSlice,16-12  	 3000000	       489 ns/op
+BenchmarkCaches/SortedSlice,18-12  	 3000000	       586 ns/op
+BenchmarkCaches/SortedSlice,18-12  	 3000000	       587 ns/op
+BenchmarkCaches/SortedSlice,18-12  	 3000000	       586 ns/op
+BenchmarkCaches/SortedSlice,20-12  	 2000000	       672 ns/op
+BenchmarkCaches/SortedSlice,20-12  	 2000000	       671 ns/op
+BenchmarkCaches/SortedSlice,20-12  	 2000000	       671 ns/op
+BenchmarkCaches/Map,0-12           	2000000000	         0.24 ns/op
+BenchmarkCaches/Map,0-12           	2000000000	         0.24 ns/op
+BenchmarkCaches/Map,0-12           	2000000000	         0.24 ns/op
+BenchmarkCaches/Map,2-12           	100000000	        17.5 ns/op
+BenchmarkCaches/Map,2-12           	100000000	        17.6 ns/op
+BenchmarkCaches/Map,2-12           	100000000	        17.6 ns/op
+BenchmarkCaches/Map,4-12           	30000000	        47.1 ns/op
+BenchmarkCaches/Map,4-12           	30000000	        47.3 ns/op
+BenchmarkCaches/Map,4-12           	30000000	        47.1 ns/op
+BenchmarkCaches/Map,6-12           	20000000	        88.9 ns/op
+BenchmarkCaches/Map,6-12           	20000000	        89.3 ns/op
+BenchmarkCaches/Map,6-12           	20000000	        89.5 ns/op
+BenchmarkCaches/Map,8-12           	10000000	       158 ns/op
+BenchmarkCaches/Map,8-12           	10000000	       158 ns/op
+BenchmarkCaches/Map,8-12           	10000000	       158 ns/op
+BenchmarkCaches/Map,10-12          	10000000	       123 ns/op
+BenchmarkCaches/Map,10-12          	10000000	       123 ns/op
+BenchmarkCaches/Map,10-12          	10000000	       122 ns/op
+BenchmarkCaches/Map,12-12          	10000000	       150 ns/op
+BenchmarkCaches/Map,12-12          	10000000	       152 ns/op
+BenchmarkCaches/Map,12-12          	10000000	       153 ns/op
+BenchmarkCaches/Map,14-12          	10000000	       174 ns/op
+BenchmarkCaches/Map,14-12          	10000000	       164 ns/op
+BenchmarkCaches/Map,14-12          	10000000	       170 ns/op
+BenchmarkCaches/Map,16-12          	10000000	       190 ns/op
+BenchmarkCaches/Map,16-12          	10000000	       190 ns/op
+BenchmarkCaches/Map,16-12          	10000000	       190 ns/op
+BenchmarkCaches/Map,18-12          	10000000	       225 ns/op
+BenchmarkCaches/Map,18-12          	10000000	       216 ns/op
+BenchmarkCaches/Map,18-12          	10000000	       227 ns/op
+BenchmarkCaches/Map,20-12          	 5000000	       243 ns/op
+BenchmarkCaches/Map,20-12          	 5000000	       261 ns/op
+BenchmarkCaches/Map,20-12          	 5000000	       246 ns/op
+BenchmarkCaches/SyncMap,0-12       	2000000000	         0.24 ns/op
+BenchmarkCaches/SyncMap,0-12       	2000000000	         0.24 ns/op
+BenchmarkCaches/SyncMap,0-12       	2000000000	         0.24 ns/op
+BenchmarkCaches/SyncMap,2-12       	30000000	        56.8 ns/op
+BenchmarkCaches/SyncMap,2-12       	30000000	        56.9 ns/op
+BenchmarkCaches/SyncMap,2-12       	30000000	        56.9 ns/op
+BenchmarkCaches/SyncMap,4-12       	20000000	       113 ns/op
+BenchmarkCaches/SyncMap,4-12       	20000000	       113 ns/op
+BenchmarkCaches/SyncMap,4-12       	20000000	       113 ns/op
+BenchmarkCaches/SyncMap,6-12       	10000000	       173 ns/op
+BenchmarkCaches/SyncMap,6-12       	10000000	       172 ns/op
+BenchmarkCaches/SyncMap,6-12       	10000000	       173 ns/op
+BenchmarkCaches/SyncMap,8-12       	10000000	       242 ns/op
+BenchmarkCaches/SyncMap,8-12       	10000000	       233 ns/op
+BenchmarkCaches/SyncMap,8-12       	 5000000	       232 ns/op
+BenchmarkCaches/SyncMap,10-12      	 5000000	       288 ns/op
+BenchmarkCaches/SyncMap,10-12      	 5000000	       309 ns/op
+BenchmarkCaches/SyncMap,10-12      	 5000000	       310 ns/op
+BenchmarkCaches/SyncMap,12-12      	 5000000	       348 ns/op
+BenchmarkCaches/SyncMap,12-12      	 5000000	       352 ns/op
+BenchmarkCaches/SyncMap,12-12      	 5000000	       370 ns/op
+BenchmarkCaches/SyncMap,14-12      	 3000000	       470 ns/op
+BenchmarkCaches/SyncMap,14-12      	 3000000	       458 ns/op
+BenchmarkCaches/SyncMap,14-12      	 3000000	       453 ns/op
+BenchmarkCaches/SyncMap,16-12      	 3000000	       483 ns/op
+BenchmarkCaches/SyncMap,16-12      	 3000000	       483 ns/op
+BenchmarkCaches/SyncMap,16-12      	 3000000	       536 ns/op
+BenchmarkCaches/SyncMap,18-12      	 2000000	       581 ns/op
+BenchmarkCaches/SyncMap,18-12      	 3000000	       568 ns/op
+BenchmarkCaches/SyncMap,18-12      	 3000000	       607 ns/op
+BenchmarkCaches/SyncMap,20-12      	 2000000	       674 ns/op
+BenchmarkCaches/SyncMap,20-12      	 2000000	       643 ns/op
+BenchmarkCaches/SyncMap,20-12      	 2000000	       652 ns/op
+PASS
+ok  	_/Users/aleksi/Code/My/stachka-2017/cache	229.896s

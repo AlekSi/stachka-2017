@@ -52,6 +52,10 @@ func TestCaches(t *testing.T) {
 	t.Run("Map", func(t *testing.T) {
 		testCache(t, NewMap(0))
 	})
+
+	t.Run("SyncMap", func(t *testing.T) {
+		testCache(t, NewSyncMap())
+	})
 }
 
 var Sink interface{}
@@ -73,24 +77,34 @@ func benchmarkCache(b *testing.B, c Cache, items int) {
 }
 
 func BenchmarkCaches(b *testing.B) {
-	const maxItems = 20
-	const capHint = 0
+	const (
+		minItems  = 0
+		maxItems  = 20
+		itemsStep = 2
+		capHint   = 0
+	)
 
-	for items := 0; items <= maxItems; items++ {
+	for items := minItems; items <= maxItems; items += itemsStep {
 		b.Run(fmt.Sprintf("Slice,%d", items), func(b *testing.B) {
 			benchmarkCache(b, NewSlice(capHint), items)
 		})
 	}
 
-	for items := 0; items <= maxItems; items++ {
+	for items := minItems; items <= maxItems; items += itemsStep {
 		b.Run(fmt.Sprintf("SortedSlice,%d", items), func(b *testing.B) {
 			benchmarkCache(b, NewSortedSlice(capHint), items)
 		})
 	}
 
-	for items := 0; items <= maxItems; items++ {
+	for items := minItems; items <= maxItems; items += itemsStep {
 		b.Run(fmt.Sprintf("Map,%d", items), func(b *testing.B) {
 			benchmarkCache(b, NewMap(capHint), items)
+		})
+	}
+
+	for items := minItems; items <= maxItems; items += itemsStep {
+		b.Run(fmt.Sprintf("SyncMap,%d", items), func(b *testing.B) {
+			benchmarkCache(b, NewSyncMap(), items)
 		})
 	}
 }

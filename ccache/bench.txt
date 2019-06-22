@@ -1,0 +1,148 @@
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+=== RUN   TestCaches
+=== RUN   TestCaches/Map
+=== RUN   TestCaches/SyncMap
+--- PASS: TestCaches (0.00s)
+    --- PASS: TestCaches/Map (0.00s)
+    --- PASS: TestCaches/SyncMap (0.00s)
+goos: darwin
+goarch: amd64
+BenchmarkCaches/Map,1           	 2000000	       651 ns/op
+BenchmarkCaches/Map,1           	 2000000	       651 ns/op
+BenchmarkCaches/Map,1           	 2000000	       649 ns/op
+BenchmarkCaches/Map,1-2         	 1000000	      1559 ns/op
+BenchmarkCaches/Map,1-2         	 1000000	      1577 ns/op
+BenchmarkCaches/Map,1-2         	 1000000	      1580 ns/op
+BenchmarkCaches/Map,1-4         	  500000	      2763 ns/op
+BenchmarkCaches/Map,1-4         	  500000	      2735 ns/op
+BenchmarkCaches/Map,1-4         	  500000	      2740 ns/op
+BenchmarkCaches/Map,1-8         	  300000	      4385 ns/op
+BenchmarkCaches/Map,1-8         	  300000	      4382 ns/op
+BenchmarkCaches/Map,1-8         	  300000	      4375 ns/op
+BenchmarkCaches/Map,3           	 2000000	       859 ns/op
+BenchmarkCaches/Map,3           	 2000000	       845 ns/op
+BenchmarkCaches/Map,3           	 2000000	       853 ns/op
+BenchmarkCaches/Map,3-2         	 1000000	      1732 ns/op
+BenchmarkCaches/Map,3-2         	 1000000	      1729 ns/op
+BenchmarkCaches/Map,3-2         	 1000000	      1728 ns/op
+BenchmarkCaches/Map,3-4         	  500000	      2935 ns/op
+BenchmarkCaches/Map,3-4         	  500000	      2950 ns/op
+BenchmarkCaches/Map,3-4         	  500000	      2954 ns/op
+BenchmarkCaches/Map,3-8         	  300000	      4656 ns/op
+BenchmarkCaches/Map,3-8         	  300000	      4693 ns/op
+BenchmarkCaches/Map,3-8         	  300000	      4724 ns/op
+BenchmarkCaches/Map,5           	 1000000	      1006 ns/op
+BenchmarkCaches/Map,5           	 2000000	       998 ns/op
+BenchmarkCaches/Map,5           	 1000000	      1005 ns/op
+BenchmarkCaches/Map,5-2         	 1000000	      1879 ns/op
+BenchmarkCaches/Map,5-2         	 1000000	      1888 ns/op
+BenchmarkCaches/Map,5-2         	 1000000	      2042 ns/op
+BenchmarkCaches/Map,5-4         	  500000	      3185 ns/op
+BenchmarkCaches/Map,5-4         	  500000	      3185 ns/op
+BenchmarkCaches/Map,5-4         	  500000	      3197 ns/op
+BenchmarkCaches/Map,5-8         	  300000	      4948 ns/op
+BenchmarkCaches/Map,5-8         	  300000	      4944 ns/op
+BenchmarkCaches/Map,5-8         	  300000	      4922 ns/op
+BenchmarkCaches/SyncMap,1       	 2000000	       671 ns/op
+BenchmarkCaches/SyncMap,1       	 2000000	       672 ns/op
+BenchmarkCaches/SyncMap,1       	 2000000	       674 ns/op
+BenchmarkCaches/SyncMap,1-2     	 1000000	      1619 ns/op
+BenchmarkCaches/SyncMap,1-2     	 1000000	      1632 ns/op
+BenchmarkCaches/SyncMap,1-2     	 1000000	      1626 ns/op
+BenchmarkCaches/SyncMap,1-4     	  500000	      2797 ns/op
+BenchmarkCaches/SyncMap,1-4     	  500000	      2810 ns/op
+BenchmarkCaches/SyncMap,1-4     	  500000	      2787 ns/op
+BenchmarkCaches/SyncMap,1-8     	  300000	      4411 ns/op
+BenchmarkCaches/SyncMap,1-8     	  300000	      4415 ns/op
+BenchmarkCaches/SyncMap,1-8     	  300000	      4401 ns/op
+BenchmarkCaches/SyncMap,3       	 2000000	       874 ns/op
+BenchmarkCaches/SyncMap,3       	 2000000	       871 ns/op
+BenchmarkCaches/SyncMap,3       	 2000000	       872 ns/op
+BenchmarkCaches/SyncMap,3-2     	 1000000	      1772 ns/op
+BenchmarkCaches/SyncMap,3-2     	 1000000	      1794 ns/op
+BenchmarkCaches/SyncMap,3-2     	 1000000	      1849 ns/op
+BenchmarkCaches/SyncMap,3-4     	  500000	      3038 ns/op
+BenchmarkCaches/SyncMap,3-4     	  500000	      3066 ns/op
+BenchmarkCaches/SyncMap,3-4     	  500000	      3028 ns/op
+BenchmarkCaches/SyncMap,3-8     	  300000	      4722 ns/op
+BenchmarkCaches/SyncMap,3-8     	  300000	      4753 ns/op
+BenchmarkCaches/SyncMap,3-8     	  300000	      4785 ns/op
+BenchmarkCaches/SyncMap,5       	 1000000	      1034 ns/op
+BenchmarkCaches/SyncMap,5       	 1000000	      1024 ns/op
+BenchmarkCaches/SyncMap,5       	 1000000	      1035 ns/op
+BenchmarkCaches/SyncMap,5-2     	 1000000	      2023 ns/op
+BenchmarkCaches/SyncMap,5-2     	 1000000	      1992 ns/op
+BenchmarkCaches/SyncMap,5-2     	 1000000	      1968 ns/op
+BenchmarkCaches/SyncMap,5-4     	  500000	      3246 ns/op
+BenchmarkCaches/SyncMap,5-4     	  500000	      3215 ns/op
+BenchmarkCaches/SyncMap,5-4     	  500000	      3239 ns/op
+BenchmarkCaches/SyncMap,5-8     	  300000	      4996 ns/op
+BenchmarkCaches/SyncMap,5-8     	  300000	      5003 ns/op
+BenchmarkCaches/SyncMap,5-8     	  300000	      5088 ns/op
+PASS
+ok  	_/Users/aleksi/Code/My/stachka-2017/ccache	121.905s

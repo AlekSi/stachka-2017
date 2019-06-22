@@ -46,6 +46,10 @@ func TestCaches(t *testing.T) {
 	t.Run("Map", func(t *testing.T) {
 		testCache(t, NewMap(0))
 	})
+
+	t.Run("SyncMap", func(t *testing.T) {
+		testCache(t, NewSyncMap())
+	})
 }
 
 func benchmarkCache(b *testing.B, c Cache, items int) {
@@ -101,9 +105,22 @@ func benchmarkCache(b *testing.B, c Cache, items int) {
 }
 
 func BenchmarkCaches(b *testing.B) {
-	const maxItems = 10000
+	const (
+		minItems  = 1
+		maxItems  = 5
+		itemsStep = 2
+		capHint   = 0
+	)
 
-	b.Run(fmt.Sprintf("Map,%d", maxItems), func(b *testing.B) {
-		benchmarkCache(b, NewMap(maxItems), maxItems)
-	})
+	for items := minItems; items <= maxItems; items += itemsStep {
+		b.Run(fmt.Sprintf("Map,%d", items), func(b *testing.B) {
+			benchmarkCache(b, NewMap(capHint), items)
+		})
+	}
+
+	for items := minItems; items <= maxItems; items += itemsStep {
+		b.Run(fmt.Sprintf("SyncMap,%d", items), func(b *testing.B) {
+			benchmarkCache(b, NewSyncMap(), items)
+		})
+	}
 }
